@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <title>Toka</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/carousel.css">
+    </head>
+    <body>
+        <div class="desktop">
+            <div class="main-desktop">
+                <header>
+                    <nav>
+                        <ul class="list">
+                            <li id="active"><a href="index.html">PÁGINA INICIAL</a></li>
+                            <li><a href="">ANIMES</a></li>
+                            <li><a href="">MEUS ANIMES</a></li>
+                            <li><a href="">ASSISTIR</a></li>
+                            <li><a href="">GALERIA</a></li>
+                            <li><a href="">SOBRE</a></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="col2">
+                    <a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="css/img/icon-fb.png" id="icon" alt="facebook"></a>
+                    <a href="https://www.facebook.com/" target="_blank" title="Twitter"><img src="css/img/icon-twitter.png" id="icon" alt="twitter"></a>
+                    <a href="https://www.facebook.com/" target="_blank" title="Google +"><img src="css/img/icon-google.png" id="icon" alt="google+"></a>
+                    <div class="line"><h3 class="title">IDIOMA</h3></div>
+                    <div id="google_translate_element"></div>
+                    <!-- <div class="content">
+                        <b>Selecione :</b>
+                        <select>
+                            <option value="portugues">Português</option>
+                            <option value="ingles">Inglês</option>
+                            <option value="espanhol">Espanhol</option>
+                        </select>
+                    </div> -->
+                    <div class="line"><h3 class="title">PESQUISA</h3></div>
+                    <div class="content">
+                        <input type="search" placeholder="Search" id="serch">
+                    </div>
+                </div>
+                <div class="col1">
+                    <figure>
+                        <span class="trs next" id="trs"></span>
+                        <span class="trs prev" id="trs"></span>
+                        <div id="slider">
+                            <a href="#" class="trs"><img src="css/img/n1.png" alt="Violet Evergarden"/></a>
+                            <a href="#" class="trs"><img src="css/img/n2.png" alt="Nanatsu no Taizai 2"/></a>
+                            <a href="#" class="trs"><img src="css/img/n3.png" alt="Grancrest Senki"/></a>
+                        </div>
+                        <figcaption></figcaption>
+                    </figure>
+                    <h3 class="title" id="title">Of the season</h3>
+                    <i>A guide with the new animes of the season.</i>
+                </div>
+            </div>
+        </div>
+        <script src="js/carousel.js"></script>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,es'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </body>
+</html>
