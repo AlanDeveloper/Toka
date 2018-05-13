@@ -28,14 +28,6 @@
                     <a href="https://www.facebook.com/" target="_blank" title="Google +"><img src="css/img/icon-google.png" id="icon" alt="google+"></a>
                     <div class="line"><h3 class="title">IDIOMA</h3></div>
                     <div id="google_translate_element"></div>
-                    <!-- <div class="content">
-                        <b>Selecione :</b>
-                        <select>
-                            <option value="portugues">Português</option>
-                            <option value="ingles">Inglês</option>
-                            <option value="espanhol">Espanhol</option>
-                        </select>
-                    </div> -->
                     <div class="line"><h3 class="title">PESQUISA</h3></div>
                     <div class="content">
                         <input type="search" placeholder="Search" id="serch">
@@ -60,7 +52,7 @@
         <script src="js/carousel.js"></script>
         <script type="text/javascript">
             function googleTranslateElementInit() {
-                new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,es,pt'}, 'google_translate_element');
+              new google.translate.TranslateElement({pageLanguage: 'pt', includedLanguages: 'en,es,pt', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true}, 'google_translate_element');
             }
         </script>
         <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
