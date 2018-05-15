@@ -82,6 +82,81 @@ i {text-align: center;opacity: 0.8;}
 .tablet {display: none;}
 #google_translate {display: block;}
 .trd {display: none;}
+#schh {display: none;}
+#mb {background-color: white;max-width: 300px;background-color: #5E0404;}
+#mb a.active {padding: 12px 10px;border-radius: 2px;background-color: #891D1D;}
+#list-mobile {list-style: none;margin-bottom: 10px;}
+#list-mobile li {margin: 20px;}
+#list-mobile a {padding: 10px 10px;text-decoration: none;color: white;font-size: 14px;}
+#list-mobile a:hover {background-color: #891D1D;}
+.searchLine {display: none;}
+.more {
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+    padding: 8px 12px 8px 12px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .2);
+}
+.close {float: right;cursor: pointer;color: white;background-color: #891D1D;}
+.share {
+    border-top-width: 1px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-left-width: 0px;
+    text-align: center;
+}
+#check {
+    display: none;
+    width: 40px;
+    height: 40px; 
+    top: -130px;
+    float: left;
+    position: relative;
+    cursor: pointer;
+    z-index: 6;
+    opacity: 0;
+    padding: 10px;
+}
+.mobile {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    -webkit-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+    transition: transform 0.4s ease;
+}
+.mobile.open {-webkit-transform: translate(0, 0);transform: translate(0, 0);}
+.hamburger span {
+    display: none;
+    width: 22px;
+    height: 3px;
+    border-radius: 20%;
+    top: 25px;
+    left: 60px;
+    position: absolute;
+    background-color: white;
+}
+.hamburger span:before {
+    content: '';
+    width: 22px;
+    height: 3px;
+    border-radius: 20%;
+    bottom: -7px;
+    position: absolute;
+    background-color: white;
+}
+.hamburger span:after {
+    content: '';
+    width: 22px;
+    height: 3px;height: 3px;
+    border-radius: 20%;
+    top: -7px;
+    position: absolute;
+    background-color: white;
+}
 @media only screen and (max-width: 1000px) {
     .col1 {margin-left: 50px;}
     .col2 {display: none;}
@@ -118,4 +193,66 @@ i {text-align: center;opacity: 0.8;}
     .tablet {display: block;}
     #google_translate {display: none;}
     .trd {display: block;float: right;}
+}
+@media only screen and (max-width: 820px) {
+    #sch {display: none;}
+    .main-desktop {width: 600px;margin: auto;}
+    .main-desktop header {width: 570px;}
+    #schh {
+        display: block;
+        width: 5px;
+        cursor: pointer;
+        top: -120px;
+        position: relative;
+        color: white;
+        float: right;
+        background: url(img/search.png) no-repeat;
+        border: none;
+        padding: 10px 0 10px 32px;
+        transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        -ms-transition: all 300ms linear;
+        -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+        -moz-box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+        box-shadow: 0 0 5px rgba(0, 0, 0, .8);
+    }
+    #schh:focus {
+        width: 150px;
+        padding-right: 15px;
+        cursor: auto;
+        outline: none;
+        transition: all 300ms linear;
+        -webkit-transition: all 300ms linear;
+        -moz-transition: all 300ms linear;
+        -o-transition: all 300ms linear;
+        -ms-transition: all 300ms linear;
+    }
+    .searchLine {
+        display: block;
+        padding: 10px;
+        border: 1px solid rgba(0, 0, 0, .2);
+        border-top-width: 0px;
+        border-right-width: 0px;
+        border-bottom-width: 1px;
+        border-left-width: 0px;
+        text-align: center;
+    }
+    .searchLine input[type=search] {
+        background: url(img/search.png) no-repeat;
+        width: 90%;
+        height: 35px;
+        background-color: #fff;
+        padding: 0 0 0 40px;
+        padding-right: 15px;
+        outline: none;
+        -webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+        -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+        box-shadow: 0 0 5px rgba(109,207,246,.5);
+    }
+    .hamburger span {display: block;}
+    #check {display: block;}
+    #icon {padding: 2px;}
+    .trd {width: 50%;height: 50%;}
 }

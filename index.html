@@ -23,6 +23,30 @@
                         </ul>
                     </nav>
                 </header>
+                <nav class="mobile" id="mb">
+                    <div class="searchLine"><input type="search" placeholder="Search"></div>
+                    <button class="more close">x</button>
+                    <ul id="list-mobile">
+                        <li><a href="#" class="active">Home</a></li>
+                        <li><a href="animes.html">Animes</a></li>
+                        <li><a href="my.html">My Animes</a></li>
+                        <li><a href="watch.html">Watch</a></li>
+                        <li><a href="personal.html">Personal</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                    </ul>
+                    <div class="share">
+                        <a target="blank" href="https://www.facebook.com/" class="facebook"></a>
+                        <a target="blank" href="https://twitter.com/" class="twitter"></a>
+                        <a target="blank" href="https://github.com/" class="github"></a>
+                    </div>
+                </nav>
+                <div class="hamburger">
+                    <label for="check"></label>
+                    <input type="checkbox" id="check">
+                    <span></span>
+                </div>
+                <input type="search" placeholder="Search" id="schh">
                 <div class="col2">
                     <a href="https://www.facebook.com/" target="_blank" title="Facebook"><img src="css/img/icon-fb.png" id="icon" alt="facebook"></a>
                     <a href="https://www.facebook.com/" target="_blank" title="Twitter"><img src="css/img/icon-twitter.png" id="icon" alt="twitter"></a>
@@ -40,9 +64,9 @@
                         <span class="trs next" id="trs"></span>
                         <span class="trs prev" id="trs"></span>
                         <div id="slider">
-                            <a href="#" class="trs"><img src="css/img/n1.png" alt="Violet Evergarden"/></a>
-                            <a href="#" class="trs"><img src="css/img/n2.png" alt="Nanatsu no Taizai 2"/></a>
-                            <a href="#" class="trs"><img src="css/img/n3.png" alt="Grancrest Senki"/></a>
+                            <a href="#" class="trs" id="ca1"><img src="css/img/n1.png" alt="Violet Evergarden"/></a>
+                            <a href="#" class="trs" id="ca2"><img src="css/img/n2.png" alt="Nanatsu no Taizai 2"/></a>
+                            <a href="#" class="trs"><img src="css/img/n3.png" id="ca3" alt="Grancrest Senki"/></a>
                         </div>
                         <figcaption></figcaption>
                     </figure>
@@ -51,6 +75,7 @@
                 </div>
             </div>
         </div>
+        <script src="js/index.js"></script>
         <script src="js/carousel.js"></script>
     </body>
 </html>
