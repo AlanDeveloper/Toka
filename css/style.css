@@ -80,6 +80,7 @@ i {text-align: center;opacity: 0.8;}
     box-shadow: 0 0 5px rgba(0, 0, 0, .8);
 }
 .tablet {display: none;}
+.trd {display: none;}
 @media only screen and (max-width: 1000px) {
     .col2 {display: none;}
     .main-desktop {width: 800px;}
@@ -113,4 +114,5 @@ i {text-align: center;opacity: 0.8;}
     }
     #sch:hover {background-color: #891D1D;}
     .tablet {display: block;}
+    .trd {display: block;float: right;}
 }
