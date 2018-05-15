@@ -82,6 +82,7 @@ i {text-align: center;opacity: 0.8;}
 .tablet {display: none;}
 .trd {display: none;}
 @media only screen and (max-width: 1000px) {
+    .col1 {margin-left: 50px;}
     .col2 {display: none;}
     .main-desktop {width: 800px;}
     #sch {
