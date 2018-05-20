@@ -190,7 +190,7 @@ i {text-align: center;opacity: 0.8;}
         -ms-transition: all 300ms linear;
     }
     #sch:hover {background-color: #891D1D;}
-    .tablet {display: block;}
+    .tablet {display: block;margin-top: 10px;}
     #google_translate {display: none;}
     .trd {display: block;float: right;}
 }
@@ -198,6 +198,7 @@ i {text-align: center;opacity: 0.8;}
     #sch {display: none;}
     .main-desktop {width: 600px;margin: auto;}
     .main-desktop header {width: 570px;}
+    .col1 {max-width: 550px;margin-left: auto;}
     #schh {
         display: block;
         width: 5px;
@@ -251,8 +252,25 @@ i {text-align: center;opacity: 0.8;}
         -moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
         box-shadow: 0 0 5px rgba(109,207,246,.5);
     }
-    .hamburger span {display: block;}
-    #check {display: block;}
     #icon {padding: 2px;}
     .trd {width: 50%;height: 50%;}
+}
+@media only screen and (max-width: 610px) {
+    .hamburger span {
+        display: block;
+        left: auto;
+        margin-left: 10px;
+    }
+    #check {
+        display: block;
+        top: -90px;
+    }
+    #schh {
+        top: -90px;
+    }
+    i {
+        font-size: 18px;
+    }
+    .list , .tablet , .searchLine {display: none;}
+    .main-desktop {width: 95%;}
 }
