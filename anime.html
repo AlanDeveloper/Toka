@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-        <link rel="stylesheet" href="css/carousel.css">
+        <link href="css/anime.css" rel="stylesheet">
     </head>
     <body>
         <div class="desktop">
@@ -13,8 +13,8 @@
                 <header>
                     <nav>
                         <ul class="list">
-                            <li id="active"><a href="index.html">PÁGINA INICIAL</a></li>
-                            <li><a href="anime.html">ANIMES</a></li>
+                            <li><a href="index.html">PÁGINA INICIAL</a></li>
+                            <li id="active"><a href="anime.html">ANIMES</a></li>
                             <li><a href="">MEUS ANIMES</a></li>
                             <li><a href="">ASSISTIR</a></li>
                             <li><a href="">GALERIA</a></li>
@@ -27,8 +27,8 @@
                     <div class="searchLine"><input type="search" placeholder="Search"></div>
                     <button class="more close">x</button>
                     <ul id="list-mobile">
-                        <li><a href="index.html" class="active">HOME</a></li>
-                        <li><a href="anime.html">ANIMES</a></li>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="anime.html" class="active">ANIMES</a></li>
                         <li><a href="my.html">MY ANIMES</a></li>
                         <li><a href="watch.html">WATCH</a></li>
                         <li><a href="personal.html">PERSONAL</a></li>
@@ -60,22 +60,17 @@
                         <a href="https://www.facebook.com/" target="_blank" title="Twitter"><img src="css/img/icon-twitter.png" id="icon" alt="twitter"></a>
                         <a href="https://www.facebook.com/" target="_blank" title="Google +"><img src="css/img/icon-google.png" id="icon" alt="google+"></a>
                     </div>
-                    <figure>
-                        <span class="trs next" id="trs"></span>
-                        <span class="trs prev" id="trs"></span>
-                        <div id="slider">
-                            <a href="#" class="trs" id="ca1"><img src="css/img/n1.png" alt="Violet Evergarden"/></a>
-                            <a href="#" class="trs" id="ca2"><img src="css/img/n2.png" alt="Nanatsu no Taizai 2"/></a>
-                            <a href="#" class="trs"><img src="css/img/n3.png" id="ca3" alt="Grancrest Senki"/></a>
-                        </div>
-                        <figcaption></figcaption>
-                    </figure>
-                    <h3 class="title" id="title">Of the season</h3>
-                    <i>A guide with the new animes of the season.</i>
+                    <div class="frm">
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                        <div class="frame"></div>
+                    </div>
                 </div>
             </div>
         </div>
         <script src="js/index.js" async></script>
-        <script src="js/carousel.js"></script>
     </body>
 </html>
