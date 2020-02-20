@@ -17,18 +17,23 @@
     height: var(--item-height);
 }
 
+.line-break {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
 .card a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.card p {
-    color: rgba(255, 255, 255, 0.5);
+.card a:hover {
+    text-shadow: white 0.1em 0.1em 0.2em;
 }
 
-.card a:hover {
-    text-shadow: white 0.1em 0.1em 0.2em
+.card p {
+    color: rgba(255, 255, 255, 0.5);
 }
 
 .star {

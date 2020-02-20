@@ -9,5 +9,6 @@ footer {
 }
 
 footer p {
+    text-align: right;
     padding: 10px;
 }

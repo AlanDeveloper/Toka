@@ -19,7 +19,9 @@ export default class Item extends Component {
             <div className="card" onDragStart={this.response} onContextMenu={this.response}>
                 <img src={`${this.props.source}`} alt="filme" />
                 <div className="card-body">
-                    <a href="#">Vingadores</a>
+                    <div class="line-break">
+                        <a href="#">{this.props.name}</a>
+		            </div>
                     <p>
                         <img className="star" src={`${starSource}`} alt="estrela" />
                         {this.props.note}/10
