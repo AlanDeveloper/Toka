@@ -1,0 +1,42 @@
+:root {
+    --item-height: 300px;
+}
+
+.card {
+    display: inline-block;  
+    background-color: transparent;
+    border: 2px solid #420000;
+    text-align: center;
+
+    padding-top: 20px;
+    width: 16rem;
+    margin: 20px;
+}
+
+.card img {
+    height: var(--item-height);
+}
+
+.card a {
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.card p {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.card a:hover {
+    text-shadow: white 0.1em 0.1em 0.2em
+}
+
+.star {
+    max-width: 25px;
+    max-height: 15px;
+    width: auto;
+    height: auto;
+
+    margin-bottom: 5px;
+    padding-right: 10px;
+}

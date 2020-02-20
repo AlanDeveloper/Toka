@@ -1,0 +1,39 @@
+:root {
+    --header-height: 100px;
+    --footer-height: 100px;
+
+    --logo-width: 150px;
+
+    --header-color: #420000;
+}
+
+* {
+    margin: 0px;
+    font-family: serif;
+}
+
+.app {
+    background-color: #000;
+    display: grid;
+    grid-template-columns: var(--logo-width) 1fr;
+    grid-template-rows: var(--header-height) 1fr var(--footer-height);
+    grid-template-areas: "logo header" " container container" "footer footer";
+
+    margin: 0px;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+header {
+    grid-area: header;
+}
+
+.container {
+    grid-area: container;
+}
+
+footer {
+    grid-area: footer;
+}
