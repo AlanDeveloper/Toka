@@ -19,7 +19,7 @@ export default class Item extends Component {
             <div className="card" onDragStart={this.response} onContextMenu={this.response}>
                 <img src={`${this.props.source}`} alt="filme" />
                 <div className="card-body">
-                    <div class="line-break">
+                    <div className="line-break">
                         <a href="#">{this.props.name}</a>
 		            </div>
                     <p>
