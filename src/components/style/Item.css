@@ -9,17 +9,19 @@
     text-align: center;
 
     padding-top: 20px;
-    width: 16rem;
-    margin: 20px;
+    width: 15rem;
+    margin: 20px 15px;
 }
 
 .card img {
     height: var(--item-height);
+    width: 200px;
 }
 
 .line-break {
     white-space: nowrap;
     overflow: hidden;
+    transform: rotateX(360deg);
 }
 
 .card a {
@@ -30,6 +32,18 @@
 
 .card a:hover {
     text-shadow: white 0.1em 0.1em 0.2em;
+}
+
+a.long {
+    position: relative;
+    right: 0px;
+    transition: 2s all;
+}
+
+a.long:hover {
+    position: relative;
+    right: 120px;
+    transition: 2s all;
 }
 
 .card p {
@@ -44,4 +58,32 @@
 
     margin-bottom: 5px;
     padding-right: 10px;
+}
+
+@media (max-width: 770px) {
+    .card {
+        width: 13rem;
+        margin: 5px;
+    }
+
+    .card img {
+        width: 160px;
+        height: 250px;
+    }
+}
+
+@media (max-width: 500px) {
+    .card {
+        width: 10rem;
+        margin: 5px;
+    }
+
+    .card img {
+        width: 120px;
+        height: 200px;
+    }
+
+    .card-body {
+        font-size: 0.8em;
+    }
 }

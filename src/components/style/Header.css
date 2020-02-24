@@ -3,7 +3,7 @@
     justify-content: space-between;
     align-items: center;
 
-    padding-right: 50px;
+    padding-right: 40px;
     font-size: 1em;
 }
 
@@ -40,7 +40,21 @@ aside a:hover {
         display: block;
     }
 
+    .header {
+        justify-content: flex-end;
+    }
+
     .header aside {
         display: none;
+    }
+
+    #demo {
+        height: 0px;
+    }
+}
+
+@media (max-width: 500px) {
+    .search input[type="text"] {
+        height: 40px;
     }
 }
