@@ -3,6 +3,8 @@ import '../style/Header.css';
 import '../style/Header-Desktop.css';
 import '../style/Header-Mobile.css';
 
+import { Link } from 'react-router-dom';
+
 export default class Header extends Component {
     constructor(props) {
         super(props);
@@ -18,13 +20,13 @@ export default class Header extends Component {
 
     render() {
         return (
-            <header className="header">
+            <header className="header" id="top">
                 <nav>
                     <div className="desktop">
                         <ul>
-                            <li><a href="/" className="active">Home</a></li>
-                            <li><a href="#">Filmes</a></li>
-                            <li><a href="#">Séries</a></li>
+                            <li><Link to="/" className="active">Home</Link></li>
+                            <li><Link to="/filmes">Filmes</Link></li>
+                            <li><Link to="/series">Séries</Link></li>
                         </ul>
                     </div>
                     <div className="mobile">
@@ -35,20 +37,20 @@ export default class Header extends Component {
                             <ul>
                                 <li className="user">
                                     <aside>
-                                        <a href="#">Entrar</a>
-                                        <a href="#">Registrar</a>
+                                        <Link to="#">Entrar</Link>
+                                        <Link to="#">Registrar</Link>
                                     </aside>
                                 </li>
-                                <li><a href="/">Home</a></li>
-                                <li><a href="#">Filmes</a></li>
-                                <li><a href="#">Séries</a></li>
+                                <li><Link to="/">Home</Link></li>
+                                <li><Link to="/filmes">Filmes</Link></li>
+                                <li><Link to="/series">Séries</Link></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
                 <aside>
-                    <a href="#">Entrar</a>
-                    <a href="#">Registrar</a>
+                    <Link to="#">Entrar</Link>
+                    <Link to="#">Registrar</Link>
                 </aside>
             </header>
         );

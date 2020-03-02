@@ -5,7 +5,13 @@ export default class Footer extends Component {
     render() {
         return (
             <footer>
-                <p>Desenvolvido por Alan Santos.</p>
+                <div className="container">
+                    <hr/>
+                    <div>
+                        <p>Desenvolvido por Alan Santos.</p>
+                        <a href="#top">Voltar ao topo</a>
+                    </div>
+                </div>
             </footer>
         );
     }

@@ -3,6 +3,8 @@ import React, { Component } from 'react';
 import '../style/Item.css';
 import starSource from '../assets/img/star.png';
 
+import { Link } from 'react-router-dom';
+
 export default class Item extends Component {
     render() {
         return (
@@ -10,7 +12,7 @@ export default class Item extends Component {
                 <img src={`${this.props.source}`} alt="filme" />
                 <div className="card-body">
                     <div className="line-break">
-                        <a href="#" className={this.props.textLong}>{this.props.name}</a>
+                        <Link to="#" className={this.props.textLong}>{this.props.name}</Link>
 		            </div>
                     <p>
                         <img className="star" src={`${starSource}`} alt="estrela" />

@@ -13,8 +13,11 @@
     font-family: serif;
 }
 
+body {
+    background-color: #000 !important;
+}
+
 .app {
-    background-color: #000;
     display: grid;
     grid-template-columns: var(--logo-width) 1fr;
     grid-template-rows: var(--header-height) 1fr var(--footer-height);
