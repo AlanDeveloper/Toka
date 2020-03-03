@@ -13,11 +13,26 @@ import Circulo_de_Fogo from '../assets/thumbnail/circulo de fogo.jpg';
 export default class Main extends Component {
     constructor(props) {
         super(props);
-        this.protectThumb = this.protectThumb.bind(this);
+
+        this.items = [
+            { name: 'Vingadores', note: '6.5', path: Vingadores},
+            { name: 'Joker', note: '8.5', path: Joker},
+            { name: 'Pica_Pau', note: '5.2', path: Pica_Pau},
+            { name: 'Transformers: O último cavaleiro', note: '7.4', path: Transformers},
+            { name: 'Circulo_de_Fogo', note: '8.7', path: Circulo_de_Fogo}
+        ]
     }
 
-    protectThumb(evt) {
-        evt.preventDefault();
+    createItem() {
+        return (
+            this.items.map(item => {
+                let i = item.name.length > 19 ? 'long' : '';
+
+                return (
+                    <Item textLong={i} name={item.name} source={item.path} note={item.note} />
+                );
+            })
+        );
     }
 
     render() {
@@ -35,17 +50,8 @@ export default class Main extends Component {
                     <h3>Navegar por Filmes</h3>
                     <hr />
                 </div>
-                <div className="content space">
-                    <Item protectThumb={this.protectThumb} name="Coringa" source={Joker} note="6.5" />
-                    <Item protectThumb={this.protectThumb} name="Pica-Pau" source={Pica_Pau} note="8" />
-                    <Item textLong="long" protectThumb={this.protectThumb} name="Transformers: O último cavaleiro" source={Transformers} note="9.6" />
-                    <Item protectThumb={this.protectThumb} name="Circulo de Fogo" source={Circulo_de_Fogo} note="7.5" />
-                    <Item protectThumb={this.protectThumb} name="Vingadores: Ultimato" source={Vingadores} note="7.1" />
-                    <Item protectThumb={this.protectThumb} name="Coringa" source={Joker} note="6.5" />
-                    <Item protectThumb={this.protectThumb} name="Pica-Pau" source={Pica_Pau} note="8" />
-                    <Item textLong="long" protectThumb={this.protectThumb} name="Transformers: O último cavaleiro" source={Transformers} note="9.6" />
-                    <Item protectThumb={this.protectThumb} name="Circulo de Fogo" source={Circulo_de_Fogo} note="7.5" />
-                    <Item protectThumb={this.protectThumb} name="Vingadores: Ultimato" source={Vingadores} note="7.1" />
+                <div className="content">
+                    { this.createItem() }
                 </div>
             </div>
         );

@@ -11,11 +11,24 @@ import Punisher from '../assets/thumbnail/punisher.jpg';
 export default class Main extends Component {
     constructor(props) {
         super(props);
-        this.protectThumb = this.protectThumb.bind(this);
+        
+        this.items = [
+            { name: 'Vikings', note: '6.5', path: Vikings },
+            { name: 'Supernatural', note: '8.5', path: Supernatural },
+            { name: 'Punisher', note: '5.2', path: Punisher }
+        ]
     }
 
-    protectThumb(evt) {
-        evt.preventDefault();
+    createItem() {
+        return (
+            this.items.map(item => {
+                let i = item.name.length > 19 ? 'long' : '';
+
+                return (
+                    <Item textLong={i} name={item.name} source={item.path} note={item.note} />
+                );
+            })
+        );
     }
 
     render() {
@@ -33,16 +46,8 @@ export default class Main extends Component {
                     <h3>Navegar por Séries</h3>
                     <hr />
                 </div>
-                <div className="content space">
-                    <Item protectThumb={this.protectThumb} name="Vikings" source={Vikings} note="7" />
-                    <Item protectThumb={this.protectThumb} name="Sobrenatural" source={Supernatural} note="8.6" />
-                    <Item protectThumb={this.protectThumb} name="Justiceiro" source={Punisher} note="7.2" />
-                    <Item protectThumb={this.protectThumb} name="Vikings" source={Vikings} note="7" />
-                    <Item protectThumb={this.protectThumb} name="Sobrenatural" source={Supernatural} note="8.6" />
-                    <Item protectThumb={this.protectThumb} name="Justiceiro" source={Punisher} note="7.2" />
-                    <Item protectThumb={this.protectThumb} name="Vikings" source={Vikings} note="7" />
-                    <Item protectThumb={this.protectThumb} name="Sobrenatural" source={Supernatural} note="8.6" />
-                    <Item protectThumb={this.protectThumb} name="Justiceiro" source={Punisher} note="7.2" />
+                <div className="content">
+                    { this.createItem() }
                 </div>
             </div>
         );

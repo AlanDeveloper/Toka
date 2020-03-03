@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 export default class Item extends Component {
     render() {
         return (
-            <div className="card" onDragStart={this.props.protectThumb} onContextMenu={this.props.protectThumb}>
+            <div className="card">
                 <img src={`${this.props.source}`} alt="filme" />
                 <div className="card-body">
                     <div className="line-break">

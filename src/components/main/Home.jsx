@@ -18,11 +18,31 @@ import Punisher from '../assets/thumbnail/punisher.jpg';
 export default class Main extends Component {
     constructor(props) {
         super(props);
-        this.protectThumb = this.protectThumb.bind(this);
+
+        this.itemsFilms = [
+            { name: 'Joker', note: '8.5', path: Joker },
+            { name: 'Pica_Pau', note: '5.2', path: Pica_Pau },
+            { name: 'Transformers: O último cavaleiro', note: '7.4', path: Transformers },
+            { name: 'Circulo_de_Fogo', note: '8.7', path: Circulo_de_Fogo }
+        ]
+
+        this.itemsSeries = [
+            { name: 'Vikings', note: '6.5', path: Vikings },
+            { name: 'Supernatural', note: '8.5', path: Supernatural },
+            { name: 'Punisher', note: '5.2', path: Punisher }
+        ]
     }
 
-    protectThumb(evt) {
-        evt.preventDefault();
+    createItem(items) {
+        return (
+            items.map(item => {
+                let i = item.name.length > 19 ? 'long' : '';
+
+                return (
+                    <Item textLong={i} name={item.name} source={item.path} note={item.note} />
+                );
+            })
+        );
     }
 
     render() {
@@ -41,10 +61,7 @@ export default class Main extends Component {
                     <hr />
                 </div>
                 <div className="content">
-                    <Item protectThumb={this.protectThumb} name="Coringa" source={Joker} note="6.5" />
-                    <Item protectThumb={this.protectThumb} name="Pica-Pau" source={Pica_Pau} note="8" />
-                    <Item textLong="long" protectThumb={this.protectThumb} name="Transformers: O último cavaleiro" source={Transformers} note="9.6" />
-                    <Item protectThumb={this.protectThumb} name="Circulo de Fogo" source={Circulo_de_Fogo} note="7.5" />
+                    { this.createItem(this.itemsFilms) }
                 </div>
                 <Link className="link" to="/filmes">Ver mais filmes</Link>
                 <div className="title">
@@ -52,9 +69,7 @@ export default class Main extends Component {
                     <hr />
                 </div>
                 <div className="content">
-                    <Item protectThumb={this.protectThumb} name="Vikings" source={Vikings} note="7" />
-                    <Item protectThumb={this.protectThumb} name="Sobrenatural" source={Supernatural} note="8.6" />
-                    <Item protectThumb={this.protectThumb} name="Justiceiro" source={Punisher} note="7.2" />
+                    { this.createItem(this.itemsSeries) }
                 </div>
                 <Link className="link" to="/series">Ver mais séries</Link>
             </div>

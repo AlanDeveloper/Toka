@@ -9,6 +9,29 @@ export default class Header extends Component {
     constructor(props) {
         super(props);
         this.menuHamburguer = this.menuHamburguer.bind(this);
+
+        this.links = [
+            { route: '/', name: 'Home' },
+            { route: '/filmes', name: 'Filmes' },
+            { route: '/series', name: 'Séries' }
+        ];
+    }
+
+    renderLink() {
+        return (
+            this.links.map(link => {
+                let i = window.location.href;
+                i = i.split('#');
+                
+                i = i[1] === link.route ? 'active' : '';
+
+                return (
+                    <li key={link.route}>
+                        <Link to={link.route} className={i}>{link.name}</Link>
+                    </li>
+                );
+            })
+        );
     }
 
     menuHamburguer() {
@@ -24,9 +47,7 @@ export default class Header extends Component {
                 <nav>
                     <div className="desktop">
                         <ul>
-                            <li><Link to="/" className="active">Home</Link></li>
-                            <li><Link to="/filmes">Filmes</Link></li>
-                            <li><Link to="/series">Séries</Link></li>
+                            { this.renderLink() }
                         </ul>
                     </div>
                     <div className="mobile">
@@ -41,9 +62,7 @@ export default class Header extends Component {
                                         <Link to="#">Registrar</Link>
                                     </aside>
                                 </li>
-                                <li><Link to="/">Home</Link></li>
-                                <li><Link to="/filmes">Filmes</Link></li>
-                                <li><Link to="/series">Séries</Link></li>
+                                { this.renderLink() }
                             </ul>
                         </div>
                     </div>

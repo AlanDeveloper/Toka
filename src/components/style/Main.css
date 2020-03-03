@@ -67,10 +67,6 @@
     flex-wrap: wrap;
 }
 
-.space {
-    justify-content: unset;
-}
-
 .link {
     margin: 20px;
     float: right;
