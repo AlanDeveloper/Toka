@@ -51,6 +51,12 @@ aside a:hover {
     #demo {
         height: 0px;
     }
+
+    #demo ul li.active {
+        transition: 1s all;
+        background-color: black;
+        border: 1px solid var(--color);
+    }
 }
 
 @media (max-width: 500px) {

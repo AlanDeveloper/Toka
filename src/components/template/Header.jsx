@@ -26,7 +26,7 @@ export default class Header extends Component {
                 i = i[1] === link.route ? 'active' : '';
 
                 return (
-                    <li key={link.route}>
+                    <li key={link.route} className={i}>
                         <Link to={link.route} className={i}>{link.name}</Link>
                     </li>
                 );

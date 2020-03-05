@@ -12,7 +12,7 @@ export default class Item extends Component {
                 <img src={`${this.props.source}`} alt="filme" />
                 <div className="card-body">
                     <div className="line-break">
-                        <Link to="#" className={this.props.textLong}>{this.props.name}</Link>
+                        <Link to="/filmes/assistir/1" className={this.props.textLong}>{this.props.name}</Link>
 		            </div>
                     <p>
                         <img className="star" src={`${starSource}`} alt="estrela" />
