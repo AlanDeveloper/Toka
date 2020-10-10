@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
+import User from '../assets/img/user.png';
+
 export default class Watch extends Component {
     render() {
         return (
@@ -34,8 +36,19 @@ export default class Watch extends Component {
                         <button>Enviar</button>
                     </form>
                     <div className="user-comentary">
-                        <div>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi et expedita ducimus eveniet veritatis cumque, odio similique tempora illum aliquam ex inventore delectus fugit omnis. Dolorum eligendi magnam tempore.</p>
+                        <div className="body">
+                            <img src={User} alt="user"/>
+                            <div>
+                                <p className="user-name">alan Santos <p className="date">14-09-2020, 13:41:44</p></p>
+                                <p className="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi et expedita ducimus eveniet veritatis cumque, odio similique tempora illum aliquam ex inventore delectus fugit omnis. Dolorum eligendi magnam tempore.</p>
+                            </div>
+                        </div>
+                        <div className="body">
+                            <img src={User} alt="user"/>
+                            <div>
+                                <p className="user-name">alan Santos <p className="date">14-09-2020, 13:41:44</p></p>
+                                <p className="user-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta nisi et expedita ducimus eveniet veritatis cumque, odio similique tempora illum aliquam ex inventore delectus fugit omnis. Dolorum eligendi magnam tempore.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
