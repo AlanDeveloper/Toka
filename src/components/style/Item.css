@@ -24,13 +24,13 @@
     transform: rotateX(360deg);
 }
 
-.card a {
+div.line-break a {
     color: white;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-.card a:hover {
+div.line-break a:hover {
     text-shadow: white 0.1em 0.1em 0.2em;
 }
 
@@ -58,6 +58,25 @@ a.long:hover {
 
     margin-bottom: 5px;
     padding-right: 10px;
+}
+
+button.btn {
+    transition: .5s all;
+    font-size: 1.25rem;
+    border-radius: var(--border-radius);
+    background-color: var(--color);
+}
+
+button.btn:hover {
+    padding: 15px;
+}
+
+button.btn a {
+    color: white;
+    text-decoration: none;
+}
+button.btn:hover a, button.btn a:hover{
+    opacity: 0.6;
 }
 
 @media (max-width: 770px) {

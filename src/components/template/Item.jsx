@@ -12,12 +12,13 @@ export default class Item extends Component {
                 <img src={`${this.props.source}`} alt="filme" />
                 <div className="card-body">
                     <div className="line-break">
-                        <Link to="/filmes/assistir/1" className={this.props.textLong}>{this.props.name}</Link>
+                        <Link to="/assistir" className={this.props.textLong}>{this.props.name}</Link>
 		            </div>
                     <p>
                         <img className="star" src={`${starSource}`} alt="estrela" />
                         {this.props.note}/10
                     </p>
+                    <button className="btn"><Link to="/assistir">Assistir</Link></button>
                 </div>
             </div>
         );

@@ -58,7 +58,7 @@ export default class Header extends Component {
                             <ul>
                                 <li className="user">
                                     <aside>
-                                        <Link to="#">Entrar</Link>
+                                        <Link to="/login">Entrar</Link>
                                         <Link to="#">Registrar</Link>
                                     </aside>
                                 </li>
@@ -68,8 +68,8 @@ export default class Header extends Component {
                     </div>
                 </nav>
                 <aside>
-                    <Link to="#">Entrar</Link>
-                    <Link to="#">Registrar</Link>
+                    <Link to="/login" className={window.location.href.split('#')[1] === '/login' ? 'active' : ''}>Entrar</Link>
+                    <Link to="/register" className={window.location.href.split('#')[1] === '/register' ? 'active' : ''}>Registrar</Link>
                 </aside>
             </header>
         );

@@ -9,7 +9,7 @@ export default class Footer extends Component {
                     <hr/>
                     <div>
                         <p>Desenvolvido por Alan Santos.</p>
-                        <a href="#top">Voltar ao topo</a>
+                        <a href="#top">{window.location.href.split('#')[1] === '/login' || window.location.href.split('#')[1] === '/register' ? '' : 'Voltar ao topo'}</a>
                     </div>
                 </div>
             </footer>
