@@ -39,7 +39,7 @@
 .search input[type="submit"] {
     margin-right: 10px;
 
-    background-image: url('../assets//img/search.png');
+    background-image: url('./search.png');
     background-size: 100%;
     background-repeat: no-repeat;
 
@@ -61,10 +61,11 @@
 }
 
 .content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 50px;
+    background-color: var(--color-white);
+    padding: 20px;
 }
 
 .link {
@@ -242,6 +243,18 @@ p.user-text {
     padding: 20px;
 }
 
+@media (max-width: 1200px) {
+    .content {
+        grid-gap: 20px 100px;
+    }
+}
+
+@media (max-width: 991px) {
+    .content {
+        grid-gap: 20px 200px;
+    }
+}
+
 @media (max-width: 1000px) {
     form.login {
         margin: 20px 50px;
@@ -260,6 +273,32 @@ p.user-text {
     }
 }
 
+@media (max-width: 768px){
+    .container {
+        max-width: 650px;
+    }
+
+    .content {
+        grid-gap: 20px 160px;
+    }
+}
+
+@media (max-width: 650px) {
+    .content {
+        grid-gap: 20px 80px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container, .container-sm {
+        max-width: 600px;
+    }
+
+    .content {
+        grid-gap: 20px 40px;
+    }
+}
+
 @media (max-width: 500px) {
     .title {
         font-size: 0.8em;
@@ -269,7 +308,7 @@ p.user-text {
 
     .search {
         margin: auto;
-        max-width: 300px;
+        max-width: 350px;
     }
 
     .search input[type="text"] {
@@ -283,5 +322,11 @@ p.user-text {
 
     .icon {
         padding: 7px 0px 4px 0px;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
     }
 }

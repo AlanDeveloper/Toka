@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/Main.css';
+import './Main.css';
 
 import { Link } from 'react-router-dom';
 

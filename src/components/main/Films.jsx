@@ -1,14 +1,13 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/Main.css';
+import './Main.css';
 
-import Item from '../template/Item';
+import Item from '../Item';
 
-import Vingadores from '../assets/thumbnail/ving.jfif';
-import Joker from '../assets/thumbnail/joker.jfif';
-import Pica_Pau from '../assets/thumbnail/pica-pau.jfif';
-import Transformers from '../assets/thumbnail/transformers.jpg';
-import Circulo_de_Fogo from '../assets/thumbnail/circulo de fogo.jpg';
+import Vingadores from './thumbnail/ving.jfif';
+import Joker from './thumbnail/joker.jfif';
+import Pica_Pau from './thumbnail/pica-pau.jfif';
+import Transformers from './thumbnail/transformers.jpg';
+import Circulo_de_Fogo from './thumbnail/circulo de fogo.jpg';
 
 export default class Main extends Component {
     constructor(props) {

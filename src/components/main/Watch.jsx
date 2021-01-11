@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
-import User from '../assets/img/user.png';
+import User from './user.png';
 
 export default class Watch extends Component {
     render() {

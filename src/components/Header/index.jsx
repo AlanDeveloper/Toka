@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../style/Header.css';
-import '../style/Header-Desktop.css';
-import '../style/Header-Mobile.css';
+import './style.css';
+import './Header-Desktop.css';
+import './Header-Mobile.css';
 
 import { Link } from 'react-router-dom';
 
@@ -44,6 +44,11 @@ export default class Header extends Component {
     render() {
         return (
             <header className="header" id="top">
+                <div className="logo">
+                    <Link to="/">
+                        <p><strong>T</strong>oka</p>
+                    </Link>
+                </div>
                 <nav>
                     <div className="desktop">
                         <ul>

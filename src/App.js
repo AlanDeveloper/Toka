@@ -1,17 +1,16 @@
 import React from 'react';
-import './components/style/App.css';
+import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import { HashRouter } from 'react-router-dom';
 
-import Logo from './components/template/Logo';
-import Header from './components/template/Header';
+import Header from './components/Header';
 import Routes from './Routes';
-import Footer from './components/template/Footer';
+import Footer from './components/Footer';
 
 export default props =>
     <HashRouter> 
         <div className="app">
-            <Logo />
             <Header />
             <Routes />
             <Footer />

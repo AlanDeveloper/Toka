@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/Main.css';
+import './Main.css';
 
 import { Link } from 'react-router-dom';
 
-import Item from '../template/Item';
+import Item from '../Item';
 
-import Joker from '../assets/thumbnail/joker.jfif';
-import Pica_Pau from '../assets/thumbnail/pica-pau.jfif';
-import Transformers from '../assets/thumbnail/transformers.jpg';
-import Circulo_de_Fogo from '../assets/thumbnail/circulo de fogo.jpg';
+import Joker from './thumbnail/joker.jfif';
+import Pica_Pau from './thumbnail/pica-pau.jfif';
+import Transformers from './thumbnail/transformers.jpg';
+import Circulo_de_Fogo from './thumbnail/circulo de fogo.jpg';
 
-import Vikings from '../assets/thumbnail/vikings.jpg';
-import Supernatural from '../assets/thumbnail/supernatural.jpg';
-import Punisher from '../assets/thumbnail/punisher.jpg';
+import Vikings from './thumbnail/vikings.jpg';
+import Supernatural from './thumbnail/supernatural.jpg';
+import Punisher from './thumbnail/punisher.jpg';
 
 export default class Main extends Component {
     constructor(props) {

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import '../style/Main.css';
+import './Main.css';
 
-import Item from '../template/Item';
+import Item from '../Item';
 
-import Vikings from '../assets/thumbnail/vikings.jpg';
-import Supernatural from '../assets/thumbnail/supernatural.jpg';
-import Punisher from '../assets/thumbnail/punisher.jpg';
+import Vikings from './thumbnail/vikings.jpg';
+import Supernatural from './thumbnail/supernatural.jpg';
+import Punisher from './thumbnail/punisher.jpg';
 
 export default class Main extends Component {
     constructor(props) {

@@ -2,8 +2,6 @@
     --header-height: 100px;
     --footer-height: 60px;
 
-    --logo-width: 150px;
-
     --border-radius: .25rem;
     --color: #420000;
     --btn-color: #290000;
@@ -20,15 +18,11 @@ body {
 
 .app {
     display: grid;
-    grid-template-columns: var(--logo-width) 1fr;
+    grid-template-columns: 1fr;
     grid-template-rows: var(--header-height) 1fr var(--footer-height);
-    grid-template-areas: "logo header" " container container" "footer footer";
+    grid-template-areas: "header header" " container container" "footer footer";
 
     margin: 0px;
-}
-
-.logo {
-    grid-area: logo;
 }
 
 header {

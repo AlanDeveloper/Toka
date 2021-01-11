@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-import '../style/Item.css';
-import starSource from '../assets/img/star.png';
+import './style.css';
+import starSource from './star.png';
 
 import { Link } from 'react-router-dom';
 
