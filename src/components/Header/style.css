@@ -1,92 +1,55 @@
-.header {
+header nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-
-    padding-right: 40px;
-    padding-left: 40px;
-    font-size: 1em;
 }
 
-aside a {
-    margin: 5px;
-    padding: 10px 20px;
-    border-radius: var(--border-radius);
-
-    color: white;
-    text-decoration: none;
-    border: 1px solid;
-    transition: 0.5s all;
+header nav a.logo {
+    font-size: 35px;
+    padding: 20px 40px;
 }
 
-aside a:hover, aside a.active {
-    color: white;
-    text-decoration: none;
-
-    border: 1px solid var(--color);
-    border-radius: var(--border-radius);
-    transition: 0.5s all;
-}
-
-.form-title {
-    color: white;
-    text-align: center;
-}
-
-.mobile {
-    display: none;
-}
-
-/* LOGO */
-
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    font-family: sans-serif;
-    font-size: 1.8em;
-}
-
-.logo a, .logo a:hover {
-    text-decoration: none;
-}
-
-.logo p {
-    margin: 0;
-    color: white;
-}
-
-.logo p strong {
+header nav > a::first-letter {
     color: var(--color);
 }
 
-@media (max-width: 800px) {
-    .desktop {
-        display: none;
-    }
-    
-    .mobile {
-        display: block;
-    }
-
-    .header aside {
-        display: none;
-    }
-
-    #demo {
-        height: 0px;
-    }
-
-    #demo ul li.active {
-        transition: 1s all;
-        background-color: black;
-        border: 1px solid var(--color);
-    }
+header nav a {
+    color: white;
 }
 
-@media (max-width: 500px) {
-    .search input[type="text"] {
-        height: 40px;
-    }
+header nav a:hover {
+    color: white;
+    text-decoration: none;
+} 
+
+header nav div.links ul {
+    display: flex;
+    list-style: none;
+    padding: 20px 40px;
+}
+
+header nav div.links ul li {
+    padding: 20px;
+}
+
+header nav div.links ul li a:hover, header nav div.links ul li a.active {
+    transition: .3s all;
+    padding-bottom: 15px;
+    border-bottom: 4px solid var(--color);
+}
+
+header nav aside {
+    margin: 20px 40px;
+    margin-top: 40px;
+}
+
+header nav aside a {
+    border: 3px solid var(--btn-color);
+    padding: 10px;
+    margin: 10px;
+    border-radius: var(--border-radius);
+}
+
+header nav aside a:hover, header nav aside a.active {
+    transition: .3s all;
+    background-color: var(--btn-color);
 }

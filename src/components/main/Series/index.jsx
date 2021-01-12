@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import './Main.css';
 
-import Item from '../Item';
+import Item from '../../Item';
+import BarSearch from '../../BarSearch';
 
-import Vikings from './thumbnail/vikings.jpg';
-import Supernatural from './thumbnail/supernatural.jpg';
-import Punisher from './thumbnail/punisher.jpg';
+import Vikings from '../thumbnail/vikings.jpg';
+import Supernatural from '../thumbnail/supernatural.jpg';
+import Punisher from '../thumbnail/punisher.jpg';
 
 export default class Main extends Component {
     constructor(props) {
@@ -33,14 +33,7 @@ export default class Main extends Component {
     render() {
         return (
             <div className="container">
-                <div className="search">
-                    <form action="#" className="input-group" method="post">
-                        <input type="text" className="form-control" placeholder="Procure seus filmes e séries..." />
-                        <div className="icon">
-                            <input type="submit" value="" />
-                        </div>
-                    </form>
-                </div>
+                <BarSearch />
                 <div className="title">
                     <h3>Navegar por Séries</h3>
                     <hr />

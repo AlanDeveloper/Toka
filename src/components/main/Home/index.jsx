@@ -1,18 +1,18 @@
 import React, { Component } from 'react';
-import './Main.css';
 
 import { Link } from 'react-router-dom';
 
-import Item from '../Item';
+import Item from '../../Item';
+import BarSearch from '../../BarSearch';
 
-import Joker from './thumbnail/joker.jfif';
-import Pica_Pau from './thumbnail/pica-pau.jfif';
-import Transformers from './thumbnail/transformers.jpg';
-import Circulo_de_Fogo from './thumbnail/circulo de fogo.jpg';
+import Joker from '../thumbnail/joker.jfif';
+import Pica_Pau from '../thumbnail/pica-pau.jfif';
+import Transformers from '../thumbnail/transformers.jpg';
+import Circulo_de_Fogo from '../thumbnail/circulo de fogo.jpg';
 
-import Vikings from './thumbnail/vikings.jpg';
-import Supernatural from './thumbnail/supernatural.jpg';
-import Punisher from './thumbnail/punisher.jpg';
+import Vikings from '../thumbnail/vikings.jpg';
+import Supernatural from '../thumbnail/supernatural.jpg';
+import Punisher from '../thumbnail/punisher.jpg';
 
 export default class Main extends Component {
     constructor(props) {
@@ -22,7 +22,8 @@ export default class Main extends Component {
             { name: 'Joker', note: '8.5', path: Joker },
             { name: 'Pica_Pau', note: '5.2', path: Pica_Pau },
             { name: 'Transformers: O último cavaleiro', note: '7.4', path: Transformers },
-            { name: 'Circulo_de_Fogo', note: '8.7', path: Circulo_de_Fogo }
+            { name: 'Circulo_de_Fogo', note: '8.7', path: Circulo_de_Fogo },
+            { name: 'Circulo_de_Fogo', note: '8.7', path: Circulo_de_Fogo },
         ]
 
         this.itemsSeries = [
@@ -47,14 +48,7 @@ export default class Main extends Component {
     render() {
         return (
             <div className="container">
-                <div className="search">
-                    <form action="#" className="input-group" method="post">
-                        <input type="text" className="form-control" placeholder="Procure seus filmes e séries..." />
-                        <div className="icon">
-                            <input type="submit" value="" />
-                        </div>
-                    </form>
-                </div>
+                <BarSearch />
                 <div className="title">
                     <h3>Principais Filmes</h3>
                     <hr />

@@ -9,7 +9,7 @@ export default class Item extends Component {
     render() {
         return (
             <div className="card">
-                <img src={`${this.props.source}`} alt="filme" />
+                <img src={this.props.source} alt="filme" />
                 <div className="card-body">
                     <div className="line-break">
                         <Link to="/assistir" className={this.props.textLong}>{this.props.name}</Link>

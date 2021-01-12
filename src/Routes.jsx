@@ -1,12 +1,12 @@
 import React from 'react';
 import { Switch, Route, Redirect } from 'react-router';
 
-import Home from './components/main/Home';
-import Login from './components/main/Login';
-import Register from './components/main/Register';
-import Films from './components/main/Films';
-import Series from './components/main/Series';
-import Watch from './components/main/Watch';
+import Home from './components/Main/Home';
+import Films from './components/Main/Films';
+import Series from './components/Main/Series';
+import Login from './components/Main/Login';
+import Register from './components/Main/Register';
+import Watch from './components/Main/Watch';
 
 export default props =>
     <Switch>
